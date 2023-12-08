@@ -85,80 +85,141 @@
 </div>
 
 
+<div class="right" style="align-items: center; justify-content: center; display: flex;">
 
 
-
-<div class="right" >
-
-<h4> Payment </h4>
-
-<input type="radio" name="paymentmethod" value="gcash"> <img src="payment1.png " style="width: 50%;">
-
-<input type="radio" name="paymentmethod" value="paypal"> <img src="payment2.png" style="width: 30%;">
-
-
-
-
-<h4> Payment Details </h4>
-<p> Complete your purchase by </p>
-
-<div class="form-row"  >
-    <div class="col-md-10 mb-3" style="margin-top: 15px;">
-      <label for="validationServer01">Card Number</label>
-      <input type="number" class="form-control " id="validationServer01" placeholder="******0783 6969" value="" required>
+  <div class="card" style="width: 55%; padding: 20px 20px 10px 20px;">
+    <img src="Photo1.png" class="card-img-top" alt="" >
+    <div class="card-body">
+      <h5 class="card-title"> </h5>
+      <p class="card-text">Wedding Event Package ₱7,500</p>
+      <hr>
+     
     </div>
+  </div>
+
+
+</div>
+
 </div>
 
 
-<div class="form-row"  >
-    <div class="col-md-5 mb-3" style="margin-top: 15px;">
-      <label for="validationServer01">Expiry</label>
-      <input type="number" class="form-control " id="validationServer01" placeholder="" value="" required>
-    </div>
 
-    <div class="col-md-5 mb-3" style="margin-top: 15px;">
-        <label for="validationServer01">CVV</label>
-        <input type="number" class="form-control " id="validationServer01" placeholder="123" value="" required>
+
+<div class="cont" style="margin-top: 100px;">
+
+
+
+  <div class="left" style="display: flex; align-items: center; justify-content: center; padding-bottom: 300px;">
+
+
+    <div class="card" style="width: 55%; padding: 20px 20px 10px 20px;">
+      <img src="Photo1.png" class="card-img-top" alt="" >
+      <div class="card-body">
+        <h5 class="card-title"> </h5>
+        <p class="card-text">Wedding Event Package ₱7,500</p>
+        <hr>
+       
       </div>
+    </div>
+  
+</div>
 
+
+<div class="right">
+  <h4> Payment </h4>
+
+  <input type="radio" name="paymentmethod" value="gcash"> <img src="payment1.png " style="width: 20%;">
+  
+  <input type="radio" name="paymentmethod" value="paypal"> <img src="payment2.png" style="width: 20%;">
+
+  <input type="radio" name="paymentmethod" value="paypal"> <img src="mastercard.png" style="width: 20%;">
+  <input type="radio" name="paymentmethod" value="paypal"> <img src="visa.png" style="width: 20%;">
+  
+
+<div class="form-row"  >
+    <div class="col-md-10 mb-3" style="margin-top: 15px;">
+      <label for="validationServer01">Account Name</label>
+      <input type="text" class="form-control " name="accountName" id="validationServer01" placeholder="" value="" required>
+    </div>
 </div>
 
 <div class="form-row"  >
     <div class="col-md-10 mb-3" style="margin-top: 15px;">
-      <input type="Submit" class="form-control " id="validationServer01" placeholder="Venue Address" value="Pay now" style="background-color:#345FD5; color: white;">
+      <label for="validationServer01">Account Number</label>
+      <input type="number" class="form-control " name="accountNumber" id="validationServer01" placeholder="" value="" required>
+    </div>
+
+</div>
+
+
+
+<div class="form-row"  >
+  <div class="col-md-5 mb-3" style="margin-top: 15px;">
+    <label for="validationServer01">Expiry date</label>
+    <input type="date" class="form-control " name="accountNumber" id="validationServer01" placeholder="" value="" required>
+  </div>
+
+  <div class="col-md-5 mb-3" style="margin-top: 15px;">
+    <label for="validationServer01">Security code</label>
+    <input type="number" class="form-control " name="accountNumber" id="validationServer01" placeholder="" value="" required>
+  </div>
+</div>
+
+
+
+<div class="form-row"  >
+    <div class="col-md-10 mb-3" style="margin-top: 15px;">
+      <input type="Submit" class="form-control submit" id="validationServer01" name="payBtn" value="Pay now" style="background-color:#345FD5; color: white;">
     </div>
 </div>
 
 <div class="form-row"  >
 
     <div class="col-md-10 mb-3" style="margin-top: 15px;">
-      <input type="button" class="form-control " id="validationServer01" placeholder="Venue Address" value="Cancel" >
+        <a class="form-control " id="validationServer01" placeholder="Venue Address" value="Cancel" href="/Homepage" style="width: 100%; height: 100%; text-align: center;">Cancel</a>
     </div>
-    
-    
-
-</div>
 
 
-
-</div>
-
-
-
-
-
-
-
-
-
-
+  
+  </div>
 
 
 
 </div>
 
 
+
+
+
+
+
+
+
+
 </div>
+
+
 </form>
+
+
+<script>
+
+
+
+var ran = Math.random()
+
+ran = Math.trunc( ran * 100000) 
+
+document.querySelector(".submit"). addEventListener("click", function(){
+
+  alert("Please Save The Code " + ran )
+
+})
+
+
+
+</script>
+
 </body>
 </html>
